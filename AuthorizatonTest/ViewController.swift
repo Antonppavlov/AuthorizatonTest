@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLogin: UILabel!
+    
+    @IBOutlet weak var labelPassword: UILabel!
+    
+    public var data: (String, String) = ("", "")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+         textLogin.text = data.0
+         labelPassword.text = data.1
+        
     }
 
     override func didReceiveMemoryWarning() {
